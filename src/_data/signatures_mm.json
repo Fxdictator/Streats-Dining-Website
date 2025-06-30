@@ -1,0 +1,20 @@
+[
+  {
+    "name": "ကင်ထားသော ဝါဂီယူအမဲသားကင်",
+    "description": "ကင်ထားသော ဝါဂီယူအမဲသားကင်၊ အာလူးထောင်း၊ မုန်လာဥနီ၊ ပြောင်းဖူးငယ်၊ ချယ်ရီခရမ်းချဉ်သီးနှင့် ဝိုင်နီဆော့စ်တို့ဖြင့်တည်ခင်းသည်။",
+    "price": "255,000 MMK",
+    "image": "/assets/images/food_images/Wagyu.jpg"
+  },
+  {
+    "name": "အကင်စုံ",
+    "description": "ပုစွန်၊ ကင်းမွန်၊ ပြည်ကြီးငါး၊ ကမာ၊ ခုံး၊ ငါး၊ ကြက်သားလိပ်၊ အမဲသားနှင့် သံပုရာထောပတ်ဆော့စ်တို့ပါဝင်သည်။",
+    "price": "79,000 MMK",
+    "image": "/assets/images/food_images/Mixed-Grilled.jpg"
+  },
+  {
+    "name": "ကြက်စွပ်ပြုတ်",
+    "description": "တရုတ်စတိုင်လ် ကြက်စွပ်ပြုတ်။",
+    "price": "32,000 MMK",
+    "image": "/assets/images/food_images/Herbal-Chicken-Soup.jpg"
+  }
+]

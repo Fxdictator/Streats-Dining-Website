@@ -1,0 +1,43 @@
+---
+layout: "layouts/base.njk"
+title: "我们的菜单"
+header: "partials/header_zh.njk"
+lang: zh
+---
+
+<main>
+    <section class="bg-streats-red py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white font-display">我们的菜单</h1>
+            <p class="text-gray-300 mt-2">主厨推荐精选。下载我们的完整菜单以查看更多选择。</p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6">
+
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold font-display text-center mb-12">主厨推荐</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {%- for item in signatures_zh -%}
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                        <img src="{{ item.image }}" alt="{{ item.name }}" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-xl font-semibold font-display">{{ item.name }}</h3>
+                            <p class="text-gray-600 text-sm mt-2 flex-grow">{{ item.description }}</p>
+                            <div class="mt-4 text-xl font-bold text-red-700">{{ item.price }}</div>
+                        </div>
+                    </div>
+                    {%- endfor -%}
+                </div>
+            </div>
+
+            <div class="text-center mt-16">
+                 <a href="/assets/PDF-Menu/Streats-Dining.pdf" target="_blank" class="bg-streats-red text-white px-10 py-4 rounded-full hover:bg-red-800 transition duration-300 text-lg font-semibold">
+                    查看完整菜单
+                </a>
+            </div>
+
+        </div>
+    </section>
+</main>

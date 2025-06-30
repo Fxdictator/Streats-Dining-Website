@@ -1,0 +1,16 @@
+{
+  "name": "streats-dining",
+  "version": "1.0.0",
+  "description": "Website for Streats Dining",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "lastest"
+  }
+}

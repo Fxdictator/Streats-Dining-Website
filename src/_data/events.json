@@ -1,0 +1,20 @@
+{
+  "title": "Private Dining & Venue Hire",
+  "subtitle": "Host your next event with the style and flavour of Streats Dining.",
+  "banner_image": "/assets/Images/events-banner.jpg",
+  "sections": [
+    {
+      "title": "Intimate Private Dinners",
+      "description": "For special occasions, business meetings, or an exclusive night out, our private dining spaces offer an intimate and sophisticated atmosphere. We can curate a custom menu to make your evening truly unforgettable.",
+      "image": "/assets/Images/event-1.jpg",
+      "alt": "An intimate private dining setup"
+    },
+    {
+      "title": "Full Venue Hire",
+      "description": "Planning a larger celebration or corporate event? Streats Dining is available for exclusive hire. Our team will work with you to handle every detail, from the menu and drinks to the decor and ambiance, ensuring your event is a seamless success.",
+      "image": "/assets/Images/events-2.jpg",
+      "alt": "The main restaurant area set up for an event"
+    }
+  ],
+  "inquiry_prompt": "To start planning your event, please get in touch with our events coordinator."
+}

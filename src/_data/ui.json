@@ -1,0 +1,24 @@
+{
+  "reservation_modal": {
+    "title": {
+      "en": "Make a Reservation",
+      "zh": "预订",
+      "mm": "ကြိုတင်မှာယူရန်"
+    },
+    "prompt": {
+      "en": "To make a reservation, please call us at:",
+      "zh": "如需预订，请致电我们：",
+      "mm": "ကြိုတင်မှာယူရန်၊ ကျေးဇူးပြု၍ ကျွန်ုပ်တို့ထံ ဖုန်းဆက်ပါ"
+    },
+    "phone": {
+      "en": "+95 123 456 789",
+      "zh": "+95 123 456 789",
+      "mm": "+95 123 456 789"
+    },
+    "close_button": {
+      "en": "Close",
+      "zh": "关闭",
+      "mm": "ပိတ်ရန်"
+    }
+  }
+}

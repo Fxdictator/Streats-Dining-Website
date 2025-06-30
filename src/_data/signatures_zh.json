@@ -1,0 +1,20 @@
+[
+  {
+    "name": "烤和牛牛排",
+    "description": "烤和牛牛排，配土豆泥、胡萝卜、小玉米、樱桃番茄和红酒汁。",
+    "price": "255,000 MMK",
+    "image": "/assets/images/food_images/Wagyu.jpg"
+  },
+  {
+    "name": "混合烧烤拼盘",
+    "description": "包含大虾、鱿鱼、墨鱼、蛤蜊、扇贝、青口、鱼肉、鸡肉卷、牛肉和柠檬黄油酱。",
+    "price": "79,000 MMK",
+    "image": "/assets/images/food_images/Mixed-Grilled.jpg"
+  },
+  {
+    "name": "药材鸡汤",
+    "description": "中式香草梅干鸡汤",
+    "price": "32,000 MMK",
+    "image": "/assets/images/food_images/Herbal-Chicken-Soup.jpg"
+  }
+]

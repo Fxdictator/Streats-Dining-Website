@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Grilled Wagyu Steak",
+    "description": "Grilled wagyu beef steak served on bed of mashed potatoes, accompanied with carrot, baby corn, cherry tomato and red wine sauce.",
+    "price": "255,000 MMK",
+    "image": "/assets/images/food_images/Wagyu.jpg"
+  },
+  {
+    "name": "Mixed Grilled",
+    "description": "Prawns, squid, cuttle fish, clams, scallop, mussel, fish, chicken roll, beef and lemon butter sauce.",
+    "price": "79,000 MMK",
+    "image": "/assets/images/food_images/Mixed-Grilled.jpg"
+  },
+  {
+    "name": "Herbal Chicken Soup",
+    "description": "Chinese styles chicken soup with herbs and dried prunes.",
+    "price": "32,000 MMK",
+    "image": "/assets/images/food_images/Herbal-Chicken-Soup.jpg"
+  }
+]

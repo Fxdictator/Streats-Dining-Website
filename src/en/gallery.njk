@@ -1,0 +1,75 @@
+---
+layout: "layouts/base.njk"
+title: "Gallery"
+lang: en
+---
+
+<main>
+    <section class="bg-streats-red py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold text-white font-display">Gallery</h1>
+            <p class="text-gray-300 mt-2">Experience the Ambiance of Streats Dining</p>
+        </div>
+    </section>
+
+    <section class="py-16 md:py-24">
+        <div class="container mx-auto px-6 spotlight-group">
+            
+            <div id="masonry-container">
+
+                <a href="/assets/images/website_images/gallery_page/Restaurant-1.JPG" class="spotlight" data-title="Restaurant Interior">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-1.JPG" alt="Restaurant Interior" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-4.JPG" class="spotlight" data-title="Restaurant Ambiance">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-4.JPG" alt="Restaurant Ambiance" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-7.JPG" class="spotlight" data-title="Breakfast Scene">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-7.JPG" alt="Breakfast Scene" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-8.JPG" class="spotlight" data-title="Pork Rib Platter">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-8.JPG" alt="Pork Rib Platter" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-3.JPG" class="spotlight" data-title="Grilled Steak">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-3.JPG" alt="Grilled Steak" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                 <a href="/assets/images/website_images/gallery_page/Restaurant-5.JPG" class="spotlight" data-title="Chocolate Pizza">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-5.JPG" alt="Chocolate Pizza" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-6.JPG" class="spotlight" data-title="Beef Burger">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-6.JPG" alt="Beef Burger" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/gallery_page/Restaurant-9.JPG" class="spotlight" data-title="Mixed Pizza">
+                    <img src="/assets/images/website_images/gallery_page/Restaurant-9.JPG" alt="Mixed Pizza" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                <a href="/assets/images/website_images/about_page/About_Us.JPG" class="spotlight" data-title="Breakfast Spread">
+                    <img src="/assets/images/website_images/about_page/About_Us.JPG" alt="A delicious breakfast spread" class="w-full h-auto rounded-lg mb-4">
+                </a>
+                
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/spotlight.js@0.7.8/dist/spotlight.min.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var masonry = new Macy({
+            container: '#masonry-container',
+            trueOrder: false,
+            waitForImages: false,
+            useOwnImageLoader: false,
+            mobileFirst: true,
+            columns: 2,
+            margin: {
+                y: 16,
+                x: 16
+            },
+            breakAt: {
+                768: 3,
+                1024: 4
+            }
+        });
+    });
+</script>

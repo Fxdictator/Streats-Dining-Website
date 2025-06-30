@@ -1,0 +1,48 @@
+<header class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/zh/" class="block">
+            <img src="/assets/Images/logo.png" alt="Streats Dining Logo" class="h-16 w-auto">
+        </a>
+        <div class="hidden md:flex space-x-8">
+            <a href="/zh/" class="text-gray-600 hover:text-red-700">首页</a>
+            <a href="/zh/about/" class="text-gray-600 hover:text-red-700">关于我们</a>
+            <a href="/zh/menu/" class="text-gray-600 hover:text-red-700">菜单</a>
+            <a href="/zh/events/" class="text-gray-600 hover:text-red-700">私人活动</a>
+            <a href="/zh/gallery/" class="text-gray-600 hover:text-red-700">图库</a>
+            <a href="/zh/contact/" class="text-gray-600 hover:text-red-700">联系我们</a>
+        </div>
+        <div class="hidden md:flex items-center space-x-2 ml-6">
+            <a href="/en/" class="hover:underline">EN</a>
+            <span class="mx-1">|</span>
+            <a href="/mm/" class="hover:underline">မြန်မာ</a>
+            <span class="mx-1">|</span>
+            <span class="font-bold text-gray-900">中文</span>
+        </div>
+        <a class="reservation-button hidden md:block bg-streats-red text-white px-6 py-2 rounded-full hover:bg-red-800 transition duration-300 cursor-pointer">
+            预订
+        </a>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-900 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </nav>
+    <div id="mobile-menu" class="md:hidden hidden bg-white px-6 pb-4">
+        <a href="/zh/" class="block text-gray-600 hover:text-red-700 py-2">首页</a>
+        <a href="/zh/about/" class="block text-gray-600 hover:text-red-700 py-2">关于我们</a>
+        <a href="/zh/menu/" class="block text-gray-600 hover:text-red-700 py-2">菜单</a>
+        <a href="/zh/events/" class="block text-gray-600 hover:text-red-700 py-2">私人活动</a>
+        <a href="/zh/gallery/" class="block text-gray-600 hover:text-red-700 py-2">图库</a>
+        <a href="/zh/contact/" class="block text-gray-600 hover:text-red-700 py-2">联系我们</a>
+        <a class="reservation-button block bg-streats-red text-white text-center mt-4 px-6 py-2 rounded-full hover:bg-red-800 transition duration-300 cursor-pointer">
+            预订
+        </a>
+        <div class="flex items-center justify-center space-x-2 mt-4 pt-4 border-t">
+            <a href="/en/" class="hover:underline">EN</a>
+            <span class="mx-1">|</span>
+            <a href="/mm/" class="hover:underline">မြန်မာ</a>
+            <span class="mx-1">|</span>
+            <a href="/zh/" class="hover:underline">中文</a>
+        </div>
+        </div>
+</header>

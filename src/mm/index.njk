@@ -1,0 +1,98 @@
+---
+layout: "layouts/base.njk"
+title: "ပင်မစာမျက်နှာ"
+header: "partials/header_mm.njk"
+lang: mm
+---
+
+<section class="bg-cover bg-center" style="background-image: url('/assets/Images/Restaurant-1.JPG');">
+    <div class="w-full bg-black bg-opacity-50 pb-24">
+        <div class="container mx-auto px-6 text-center text-white pt-24 md:pt-32">
+            <h1 class="text-4xl md:text-6xl font-bold font-display">ထူးခြားကောင်းမွန်သောအစားအစာများကိုခံစားကြည့်ပါ</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">မန္တလေးမြို့လယ်တွင် အစားအသောက်ခရီးစဉ်တစ်ခု။ ibis Styles Mandalay Centre Hotel တွင် ဥရောပနှင့်အာရှအစားအစာများ၏ผสมစပ်မှုကိုခံစားလိုက်ပါ။</p>
+            <div class="mt-8 flex flex-col sm:flex-row sm:justify-center gap-4">
+                <a href="/mm/menu/" class="inline-block bg-streats-red text-white px-10 py-3 rounded-full hover:bg-red-800 transition duration-300 text-lg font-semibold">
+                    မီနူးကြည့်ရန်
+                </a>
+                <a href="/mm/events/" class="inline-block bg-white text-streats-red px-10 py-3 rounded-full hover:bg-streats-red hover:text-white transition duration-300 text-lg font-semibold">
+                    ပွဲများကြိုတင်စာရင်းသွင်းရန်
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-6 -mt-16 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-8 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold font-display text-gray-900">နံနက်စာ</h2>
+            <p class="font-semibold text-gray-700 mt-2">ဘူဖေးစတိုင်</p>
+            <div class="mt-4 text-left border-t pt-4">
+                <p class="flex justify-between"><strong>ဟိုတယ်ဧည့်သည်များ:</strong> <span>အခမဲ့</span></p>
+                <div class="mt-2">
+                    <p><strong>ပြင်ပဧည့်သည်များ:</strong></p>
+                    <p class="flex justify-between ml-4"><span>လူကြီး:</span> <span>28,500 MMK</span></p>
+                    <p class="flex justify-between ml-4"><span>ကလေး:</span> <span>15,000 MMK</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+            <h2 class="text-3xl font-bold font-display text-gray-900">နေ့လည်စာ</h2>
+            <p class="text-gray-600 mt-2 flex-grow">သင်၏နေ့လည်ခင်းကိုတောက်ပစေရန် ဥရောပနှင့်အာရှအရသာများပေါင်းစပ်ထားသောအမျိုးစုံသောမီနူး။</p>
+            <div class="mt-6">
+                <a href="/mm/menu/" class="font-bold text-streats-red hover:underline">နေ့လည်စာမီနူး →</a>
+            </div>
+        </div>
+        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+            <h2 class="text-3xl font-bold font-display text-gray-900">ညစာ</h2>
+            <p class="text-gray-600 mt-2 flex-grow">တက်ကြွသောဝန်းကျင်တွင် အရသာရှိသောဟင်းလျာမျိုးစုံဖြင့် အမှတ်တရညစာစားပွဲသို့လာရောက်သုံးဆောင်ပါ။</p>
+            <div class="mt-6">
+                <a href="/mm/menu/" class="font-bold text-streats-red hover:underline">ညစာမီနူး →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if promotions_mm and promotions_mm.length > 0 %}
+    <section class="bg-grey-100 py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-display text-gray-900">လက်ရှိပရိုမိုးရှင်းများ</h2>
+                <p class="text-gray-600 mt-2">ဤအထူးအစီအစဉ်များကိုလက်လွတ်မခံပါနှင့်။</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {%- for promo in promotions_mm -%}
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="{{ promo.image }}" alt="{{ promo.alt }}" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold font-display">{{ promo.title }}</h3>
+                        <p class="text-gray-600 mt-2">{{ promo.description }}</p>
+                        <div class="mt-4 text-xl font-bold text-red-700">{{ promo.validity }}</div>
+                    </div>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+{% else %}
+    <section class="bg-gray-100 pt-16 md:pt-24 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-display text-gray-900">စားဖိုမှူး၏ အထူးဟင်းလျာများ</h2>
+                <p class="text-gray-600 mt-2">ကျွန်ုပ်တို့၏ အကောင်းဆုံးဟင်းလျာများကို တစ်နှစ်ပတ်လုံး မြည်းစမ်းကြည့်ရှုနိုင်ပါသည်။</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {%- for item in signatures_mm -%}
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="{{ item.image }}" alt="{{ item.name }}" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold font-display">{{ item.name }}</h3>
+                        <p class="text-gray-600 text-sm mt-2 flex-grow">{{ item.description }}</p>
+                        <div class="mt-4 text-xl font-bold text-red-700">{{ item.price }}</div>
+                    </div>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+{% endif %}

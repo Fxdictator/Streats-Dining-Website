@@ -1,0 +1,99 @@
+---
+layout: "layouts/base.njk"
+title: "Home"
+lang: en
+---
+
+<section class="bg-cover bg-center" style="background-image: url('/assets/Images/Restaurant-1.JPG');">
+    <div class="w-full bg-black bg-opacity-50 pb-24">
+        <div class="container mx-auto px-6 text-center text-white pt-24 md:pt-32">
+            <h1 class="text-4xl md:text-6xl font-bold font-display">Experience Culinary Excellence</h1>
+            <p class="mt-4 text-lg md:text-xl max-w-2xl mx-auto">A culinary journey in the heart of Mandalay. Experience a delightful blend of European and Asian cuisine at ibis Styles Mandalay Centre Hotel.</p>
+            <div class="mt-8 flex flex-col sm:flex-row sm:justify-center gap-4">
+                <a href="/en/menu/" class="inline-block bg-streats-red text-white px-10 py-3 rounded-full hover:bg-red-800 transition duration-300 text-lg font-semibold">
+                    View Our Menu
+                </a>
+                <a href="/en/events/" class="inline-block bg-white text-streats-red px-10 py-3 rounded-full hover:bg-streats-red hover:text-white transition duration-300 text-lg font-semibold">
+                    Book Your Event
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container mx-auto px-6 -mt-16 relative z-10">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="bg-white p-8 rounded-lg shadow-xl">
+            <h2 class="text-3xl font-bold font-display text-gray-900">Breakfast</h2>
+            <p class="font-semibold text-gray-700 mt-2">Buffet Style</p>
+            <div class="mt-4 text-left border-t pt-4">
+                <p class="flex justify-between"><strong>In-house Guests:</strong> <span>Complimentary</span></p>
+                <div class="mt-2">
+                    <p><strong>Outside Guests:</strong></p>
+                    <p class="flex justify-between ml-4"><span>Adult:</span> <span>28,500 MMK</span></p>
+                    <p class="flex justify-between ml-4"><span>Child:</span> <span>15,000 MMK</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+            <h2 class="text-3xl font-bold font-display text-gray-900">Lunch</h2>
+            <p class="text-gray-600 mt-2 flex-grow">A diverse a la carte menu featuring a fusion of European and Asian flavors to brighten your afternoon.</p>
+            <div class="mt-6">
+                <a href="/en/menu/" class="font-bold text-streats-red hover:underline">Explore Lunch Menu →</a>
+            </div>
+        </div>
+
+        <div class="bg-white p-8 rounded-lg shadow-xl flex flex-col">
+            <h2 class="text-3xl font-bold font-display text-gray-900">Dinner</h2>
+            <p class="text-gray-600 mt-2 flex-grow">Join us for a memorable dinner with a wide selection of gourmet dishes in a vibrant atmosphere.</p>
+            <div class="mt-6">
+                <a href="/en/menu/" class="font-bold text-streats-red hover:underline">Discover Dinner Menu →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% if promotions and promotions.length > 0 %}
+    <section class="bg-red-100 py-16 md:py-24">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-display text-gray-900">Current Promotions</h2>
+                <p class="text-gray-600 mt-2">Don't miss out on these special offers!</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {%- for promo in promotions -%}
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="{{ promo.image }}" alt="{{ promo.alt }}" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold font-display">{{ promo.title }}</h3>
+                        <p class="text-gray-600 mt-2">{{ promo.description }}</p>
+                        <div class="mt-4 text-xl font-bold text-red-700">{{ promo.validity }}</div>
+                    </div>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+{% else %}
+    <section class="bg-gray-100 pt-16 md:pt-24 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold font-display text-gray-900">Chef's Recommendations</h2>
+                <p class="text-gray-600 mt-2">A taste of our finest dishes, available year-round.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                {%- for item in signatures -%}
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden flex flex-col">
+                    <img src="{{ item.image }}" alt="{{ item.name }}" class="w-full h-56 object-cover">
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h3 class="text-xl font-semibold font-display">{{ item.name }}</h3>
+                        <p class="text-gray-600 text-sm mt-2 flex-grow">{{ item.description }}</p>
+                        <div class="mt-4 text-xl font-bold text-red-700">{{ item.price }}</div>
+                    </div>
+                </div>
+                {%- endfor -%}
+            </div>
+        </div>
+    </section>
+{% endif %}
