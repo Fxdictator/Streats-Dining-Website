@@ -1,18 +1,18 @@
 {
   "title": "私人晚宴与场地租赁",
   "subtitle": "用Streats Dining的风格与风味，举办您的下一次活动。",
-  "banner_image": "/assets/Images/events-banner.jpg",
+  "banner_image": "/assets/Images/website_images/private_events/events-banner.jpg",
   "sections": [
     {
       "title": "私密晚宴",
       "description": "无论是特殊场合、商务会议，还是专属的夜晚，我们的私人用餐空间都能提供私密而精致的氛围。我们可以为您量身定制菜单，让您的夜晚真正难忘。",
-      "image": "/assets/Images/event-1.jpg",
+      "image": "/assets/Images/website_images/private_events/event-1.jpg",
       "alt": "私密的私人晚宴布置"
     },
     {
       "title": "场地整体租赁",
       "description": "正在筹划大型庆典或公司活动？Streats Dining可供独家租赁。我们的团队将与您合作，处理从菜单、饮品到装饰和氛围的每一个细节，确保您的活动圆满成功。",
-      "image": "/assets/Images/events-2.jpg",
+      "image": "/assets/Images/website_images/private_events/events-2.jpg",
       "alt": "为主活动布置的主餐厅区域"
     }
   ],
