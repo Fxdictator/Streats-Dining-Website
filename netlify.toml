@@ -1,0 +1,8 @@
+# Netlify Build Settings for an Eleventy Site
+
+[build]
+  # This is the command Netlify will run to build your site.
+  command = "npm run build"
+
+  # This is the directory that Netlify will deploy.
+  publish = "public"
